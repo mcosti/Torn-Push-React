@@ -18,10 +18,10 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 // import the different screens
-import Loading from './loading'
-import SignUp from './signup'
-import Login from './login'
-import Main from './main'
+import Loading from './components/loading'
+import SignUp from './components/signup'
+import Login from './components/login'
+import Main from './components/main'
 // create our app's navigation stack
 const App = createSwitchNavigator(
     {
