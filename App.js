@@ -6,6 +6,7 @@ import * as firebase from 'firebase'
 // import firebase from 'react-native-firebase';
 
 
+
 const firebaseConfig = {
     apiKey: "AIzaSyCe5rjJ-jRq92r13zlO5fSlx-nFR7a7bHI",
     authDomain: "torn-push-dev.firebaseapp.com",
@@ -18,10 +19,10 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 // import the different screens
-import Loading from './components/loading'
-import SignUp from './components/signup'
-import Login from './components/login'
-import Main from './components/main'
+import Loading from './src/components/Loading'
+import SignUp from './src/components/Signup'
+import Login from './src/components/Login'
+import Main from './src/components/Main'
 // create our app's navigation stack
 const App = createSwitchNavigator(
     {
@@ -31,7 +32,7 @@ const App = createSwitchNavigator(
         Main
     },
     {
-        initialRouteName: 'Loading'
+        initialRouteName: 'Login'
     }
 )
 export default App
